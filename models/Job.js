@@ -22,10 +22,10 @@ const JobSchema = new mongoose.Schema(
       enum: ["full-time", "part-time", "remote", "internship"],
       default: "full-time",
     },
-    location: {
+    jobLocation: {
       type: String,
       required: [true, "Please provide location"],
-      default: "my city",
+      default: "my city ",
     },
     createdBy: {
       type: mongoose.Types.ObjectId,
