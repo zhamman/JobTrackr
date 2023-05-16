@@ -27,7 +27,10 @@ const AddJob = () => {
       displayAlert();
       return;
     }
-    console.log("create job");
+    if (isEditing) {
+      return;
+    }
+    createJob();
   };
 
   const handleJobInput = e => {
@@ -79,8 +82,18 @@ const AddJob = () => {
               type="submit"
               className="btn btn-block submit-btn"
               onClick={handleSubmit}
+              disabled={isLoading}
             >
               submit
+            </button>
+            <button
+              className="btn btn-block btn-clear"
+              onClick={e => {
+                e.preventDefault();
+                clearValues();
+              }}
+            >
+              Clear
             </button>
           </div>
         </div>
