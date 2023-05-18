@@ -28,6 +28,7 @@ const AddJob = () => {
       return;
     }
     if (isEditing) {
+      editJob();
       return;
     }
     createJob();
