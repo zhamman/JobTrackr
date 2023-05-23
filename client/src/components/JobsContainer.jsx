@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Job from "./Job";
 import Wrapper from "../assets/wrappers/JobsContainer";
 import Loading from "./Loading";
+import PageBtnContainer from "./PageBtnContainer";
 
 const JobsContainer = () => {
   const {
@@ -15,11 +16,12 @@ const JobsContainer = () => {
     searchStatus,
     sort,
     searchType,
+    numOfPages,
   } = useAppContext();
 
   useEffect(() => {
     getJobs();
-  }, [search, searchStatus, sort, searchType]);
+  }, [page, search, searchStatus, sort, searchType]);
 
   if (isLoading) {
     return <Loading center />;
@@ -41,6 +43,7 @@ const JobsContainer = () => {
           return <Job key={jobs._id} {...job} />;
         })}
       </div>
+      {numOfPages > 1 && <PageBtnContainer />}
     </Wrapper>
   );
 };
