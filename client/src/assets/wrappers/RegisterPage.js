@@ -42,5 +42,24 @@ const Wrapper = styled.section`
     cursor: pointer;
     letter-spacing: var(--letterSpacing);
   }
+  .member-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    color: var(--dark-green);
+    background: var(--golden);
+    border: transparent;
+    border-radius: var(--borderRadius);
+    letter-spacing: var(--letterSpacing);
+    padding: 0.375rem 0.75rem;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition);
+    text-transform: capitalize;
+  }
+  .member-center:hover {
+    color: var(--white);
+  }
 `;
 export default Wrapper;

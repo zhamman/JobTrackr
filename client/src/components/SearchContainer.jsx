@@ -1,4 +1,4 @@
-import { FormRow, FormRowSelect } from ".";
+import { Alert, FormRow, FormRowSelect } from ".";
 import Wrapper from "../assets/wrappers/SearchContainer";
 import { useAppContext } from "../context/appContext";
 
@@ -14,6 +14,7 @@ const SearchContainer = () => {
     jobTypeOptions,
     handleChange,
     clearFilters,
+    showAlert,
   } = useAppContext();
 
   const handleSearch = e => {
@@ -29,6 +30,7 @@ const SearchContainer = () => {
     <Wrapper>
       <form className="form">
         <h4>search form</h4>
+        {showAlert && <Alert />}
         <div className="form-center">
           <FormRow
             type="text"
