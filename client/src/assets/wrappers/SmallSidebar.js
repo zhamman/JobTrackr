@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.aside`
   @media (min-width: 992px) {
@@ -19,8 +19,24 @@ const Wrapper = styled.aside`
     z-index: 99;
     opacity: 1;
   }
+  .new-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    svg {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+    h1 {
+      margin-bottom: 0;
+      margin-right: 1rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
   .content {
-    background: var(--white);
+    background: var(--grey);
     width: var(--fluid-width);
     height: 95vh;
     border-radius: var(--borderRadius);
@@ -37,7 +53,7 @@ const Wrapper = styled.aside`
     background: transparent;
     border-color: transparent;
     font-size: 2rem;
-    color: var(--red-dark);
+    color: var(--dark-green);
     cursor: pointer;
   }
   .nav-links {
@@ -48,16 +64,16 @@ const Wrapper = styled.aside`
   .nav-link {
     display: flex;
     align-items: center;
-    color: var(--grey-500);
+    color: var(--dark-green);
     padding: 1rem 0;
     text-transform: capitalize;
     transition: var(--transition);
   }
   .nav-link:hover {
-    color: var(--grey-900);
+    color: var(--darker-green);
   }
   .nav-link:hover .icon {
-    color: var(--primary-500);
+    color: var(--darker-green);
   }
   .icon {
     font-size: 1.5rem;
@@ -67,10 +83,10 @@ const Wrapper = styled.aside`
     transition: var(--transition);
   }
   .active {
-    color: var(--grey-900);
+    color: var(--darker-green);
   }
   .active .icon {
-    color: var(--primary-500);
+    color: var(--darker-green);
   }
-`
-export default Wrapper
+`;
+export default Wrapper;

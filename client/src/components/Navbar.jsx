@@ -3,6 +3,7 @@ import { FaAlignLeft, FaUserCircle, FaCaretDown } from "react-icons/fa";
 import { useAppContext } from "../context/appContext";
 import Logo from "./Logo";
 import Wrapper from "../assets/wrappers/Navbar";
+import { FaPhoenixFramework } from "react-icons/fa";
 
 const Navbar = () => {
   const [showLogout, setShowLogout] = useState(false);
@@ -15,7 +16,10 @@ const Navbar = () => {
           <FaAlignLeft />
         </button>
         <div>
-          <Logo />
+          <div className="new-logo ">
+            <FaPhoenixFramework />
+            <h1>JobTrackr</h1>
+          </div>
           <h3 className="logo-text">Dashboard</h3>
         </div>
         <div className="btn-container">

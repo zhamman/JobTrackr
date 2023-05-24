@@ -5,6 +5,7 @@ import links from "../utils/links";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
+import { FaPhoenixFramework } from "react-icons/fa";
 
 const SmallSidebar = () => {
   const { showSidebar, toggleSidebar } = useAppContext();
@@ -20,7 +21,10 @@ const SmallSidebar = () => {
             <FaTimes />
           </button>
           <header>
-            <Logo />
+            <div className="new-logo">
+              <FaPhoenixFramework />
+              <h1>JobTrackr</h1>
+            </div>
           </header>
           <NavLinks toggleSidebar={toggleSidebar} />
         </div>

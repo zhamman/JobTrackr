@@ -18,6 +18,21 @@ const Wrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
   }
+  .new-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    svg {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    h1 {
+      margin-bottom: 0;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
   .toggle-btn {
     background: transparent;
     border-color: transparent;
@@ -79,7 +94,7 @@ const Wrapper = styled.nav`
     .nav-center {
       width: 90%;
     }
-    .logo {
+    .new-logo {
       display: none;
     }
     .logo-text {

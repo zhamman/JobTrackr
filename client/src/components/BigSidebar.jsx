@@ -20,7 +20,7 @@ const BigSidebar = () => {
               <h1>JobTrackr</h1>
             </div>
           </header>
-          <NavLinks toggleSidebar={toggleSidebar} />
+          <NavLinks toggleSidebar={showSidebar} />
         </div>
       </div>
     </Wrapper>

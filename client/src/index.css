@@ -248,7 +248,7 @@ ul {
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
   background: var(--beige);
-  border: 1px solid #545454;
+  border: 1px solid var(--dark-green);
 }
 .form-input,
 .form-select,
