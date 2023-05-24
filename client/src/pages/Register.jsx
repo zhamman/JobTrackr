@@ -3,6 +3,7 @@ import { Alert, FormRow, Logo } from "../components";
 import { useState, useEffect } from "react";
 import { useAppContext } from "../context/appContext";
 import { useNavigate } from "react-router-dom";
+import { FaPhoenixFramework } from "react-icons/fa";
 
 const initialState = {
   name: "",
@@ -59,7 +60,10 @@ const Register = () => {
   return (
     <Wrapper className="full-page">
       <form className="form" onSubmit={onSubmit}>
-        <Logo />
+        <div className="new-logo">
+          <FaPhoenixFramework />
+          <h1>JobTrackr</h1>
+        </div>
         <h3>{values.isMember ? "Login" : "Register"}</h3>
         {showAlert && <Alert />}
         {!values.isMember && (

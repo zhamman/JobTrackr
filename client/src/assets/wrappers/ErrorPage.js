@@ -1,11 +1,10 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.main`
   text-align: center;
   img {
     max-width: 600px;
-    display: block;
-    margin-bottom: 2rem;
+    align-self: center;
   }
   display: flex;
   align-items: center;
@@ -19,10 +18,10 @@ const Wrapper = styled.main`
     color: var(--grey-500);
   }
   a {
-    color: var(--primary-500);
+    color: var(--golden);
     text-decoration: underline;
     text-transform: capitalize;
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;

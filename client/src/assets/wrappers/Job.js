@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.article`
-  background: var(--white);
+  background: var(--grey);
   border-radius: var(--borderRadius);
   display: grid;
   grid-template-rows: 1fr auto;
@@ -22,7 +22,7 @@ const Wrapper = styled.article`
     height: 60px;
     display: grid;
     place-items: center;
-    background: var(--primary-500);
+    background: var(--dark-green);
     border-radius: var(--borderRadius);
     font-size: 1.5rem;
     font-weight: 700;
@@ -33,25 +33,26 @@ const Wrapper = styled.article`
   .info {
     h5 {
       margin-bottom: 0.25rem;
+      font-weight: 600;
     }
     p {
       margin: 0;
       text-transform: capitalize;
-      color: var(--grey-400);
+      color: var(--golden);
       letter-spacing: var(--letterSpacing);
     }
   }
   .pending {
-    background: #fcefc7;
-    color: #e9b949;
+    background: #dad8d7;
+    color: #2b2b2b;
   }
   .interview {
-    background: #e0e8f9;
-    color: #647acb;
+    background: #ddefe1;
+    color: #0f7c2b;
   }
   .declined {
-    color: #d66a6a;
-    background: #ffeeee;
+    color: #d00101;
+    background: #f0d5d5;
   }
   .content {
     padding: 1rem 1.5rem;
@@ -100,6 +101,6 @@ const Wrapper = styled.article`
   &:hover .actions {
     visibility: visible;
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;

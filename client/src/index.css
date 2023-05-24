@@ -24,7 +24,11 @@ html {
   --primary-800: #0a6c74;
   --primary-900: #044e54;
 
+  --red: rgb(141, 12, 12);
+
   /* grey */
+  --grey: #f0f0f0;
+  --darker-grey: #767676;
   --grey-50: #f0f4f8;
   --grey-100: #d9e2ec;
   --grey-200: #bcccdc;
@@ -42,6 +46,17 @@ html {
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  --beige: #dcd7c9;
+  --dark-green: #183a1d;
+  --green-mid: #183a1d9a;
+  --light-green: #e1eedd;
+  --dark-grey: #121212;
+  /* --darker-green: #122223; */
+  --darker-green: #182424;
+  --brown: #a27b5c;
+  --cream: #eae5d2;
+  --golden: #da9e63;
+  --light-golden: #ddc2a7;
 
   /* fonts  */
   --headingFont: "Roboto Condensed", Sans-Serif;
@@ -70,11 +85,11 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: var(--beige);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  color: var(--textColor);
+  color: var(--dark-green);
 }
 
 p {
@@ -148,7 +163,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--dark-green);
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -159,7 +174,7 @@ ul {
   display: inline-block;
 }
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--dark-green);
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
@@ -208,7 +223,7 @@ ul {
 .form {
   width: 90vw;
   max-width: var(--fixed-width);
-  background: var(--white);
+  background: var(--grey);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
@@ -224,6 +239,7 @@ ul {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
+  color: var(--dark-green);
 }
 .form-input,
 .form-textarea,
@@ -231,8 +247,8 @@ ul {
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
-  background: var(--grey-50);
-  border: 1px solid var(--grey-200);
+  background: var(--beige);
+  border: 1px solid #545454;
 }
 .form-input,
 .form-select,
@@ -241,6 +257,10 @@ ul {
 }
 .form-row {
   margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
 }
 
 .form-textarea {

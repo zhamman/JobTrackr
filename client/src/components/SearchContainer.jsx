@@ -62,7 +62,7 @@ const SearchContainer = () => {
             onClick={handleSubmit}
           >
             {" "}
-            clear filters
+            clear
           </button>
         </div>
       </form>

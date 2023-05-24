@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.main`
   nav {
@@ -8,6 +8,21 @@ const Wrapper = styled.main`
     height: var(--nav-height);
     display: flex;
     align-items: center;
+    .new-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      svg {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+      h1 {
+        margin-bottom: 0;
+        margin-right: 1rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
@@ -18,23 +33,25 @@ const Wrapper = styled.main`
   h1 {
     font-weight: 700;
     span {
-      color: var(--primary-500);
+      color: var(--golden);
     }
   }
   p {
-    color: var(--grey-600);
+    color: var(--darker-grey);
   }
-  .main-img {
+  .landing-icon {
     display: none;
+    font-size: 12rem;
+    margin-left: 40%;
   }
   @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 1fr;
       column-gap: 3rem;
     }
-    .main-img {
+    .landing-icon {
       display: block;
     }
   }
-`
-export default Wrapper
+`;
+export default Wrapper;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   margin-top: 4rem;
@@ -7,7 +7,7 @@ const Wrapper = styled.section`
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
-    color: var(--primary-500);
+    color: #da9e63;
     font-size: 1.25rem;
     cursor: pointer;
   }
@@ -15,6 +15,6 @@ const Wrapper = styled.section`
     text-align: center;
     margin-bottom: 0.75rem;
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;

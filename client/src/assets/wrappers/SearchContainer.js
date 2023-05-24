@@ -1,9 +1,15 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   .form {
     width: 100%;
     max-width: 100%;
+    h4 {
+      color: var(--dark-green);
+    }
+    .form-center {
+      margin: 0 0 1rem 0;
+    }
   }
   .form-input,
   .form-select,
@@ -25,6 +31,8 @@ const Wrapper = styled.section`
   .btn-block {
     align-self: end;
     margin-top: 1rem;
+    color: var(--white);
+    background: var(--golden);
   }
   @media (min-width: 768px) {
     .form-center {
@@ -39,6 +47,6 @@ const Wrapper = styled.section`
       margin-top: 0;
     }
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;

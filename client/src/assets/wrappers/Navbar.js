@@ -1,11 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.nav`
   height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 10px 10px -10px rgba(0, 0, 0, 0.1);
+  //box-shadow: rgba(17, 12, 46, 0.15) 0px 1px 10px 0px;
   .logo {
     display: flex;
     align-items: center;
@@ -21,14 +22,17 @@ const Wrapper = styled.nav`
     background: transparent;
     border-color: transparent;
     font-size: 1.75rem;
-    color: var(--primary-500);
+    color: var(--dark-green);
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  background: var(--white);
+  background: var(--beige);
   .btn-container {
     position: relative;
+    svg {
+      color: var(--grey);
+    }
   }
   .btn {
     display: flex;
@@ -37,6 +41,8 @@ const Wrapper = styled.nav`
     gap: 0 0.5rem;
     position: relative;
     box-shadow: var(--shadow-2);
+
+    color: var(--grey);
   }
 
   .dropdown {
@@ -44,7 +50,7 @@ const Wrapper = styled.nav`
     top: 40px;
     left: 0;
     width: 100%;
-    background: var(--primary-100);
+    background: var(--dark-green);
     box-shadow: var(--shadow-2);
     padding: 0.5rem;
     text-align: center;
@@ -57,7 +63,7 @@ const Wrapper = styled.nav`
   .dropdown-btn {
     background: transparent;
     border-color: transparent;
-    color: var(--primary-500);
+    color: var(--grey);
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
     cursor: pointer;
@@ -80,5 +86,5 @@ const Wrapper = styled.nav`
       display: block;
     }
   }
-`
-export default Wrapper
+`;
+export default Wrapper;
