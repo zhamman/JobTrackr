@@ -30,6 +30,7 @@ const JobsContainer = () => {
   if (jobs.length === 0) {
     return (
       <Wrapper>
+        <h5>No Jobs to display...</h5>
         <Link to="../add-job" className="btn ">
           Add Jobs
         </Link>
