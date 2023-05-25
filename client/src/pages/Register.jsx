@@ -106,7 +106,7 @@ const Register = () => {
             setupUser({
               currentUser: { email: "demo@demo.com", password: "secret" },
               endPoint: "login",
-              alertText: "Login Successfule! Redirecting...",
+              alertText: "Login Successful! Redirecting...",
             });
           }}
         >
