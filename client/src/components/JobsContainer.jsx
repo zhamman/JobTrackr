@@ -1,10 +1,10 @@
 import { useAppContext } from "../context/appContext";
 import { useEffect } from "react";
 import Job from "./Job";
-
 import Wrapper from "../assets/wrappers/JobsContainer";
 import Loading from "./Loading";
 import PageBtnContainer from "./PageBtnContainer";
+import { Link } from "react-router-dom";
 
 const JobsContainer = () => {
   const {
@@ -30,7 +30,9 @@ const JobsContainer = () => {
   if (jobs.length === 0) {
     return (
       <Wrapper>
-        <h2>No Jobs to display</h2>
+        <Link to="../add-job" className="btn ">
+          Add Jobs
+        </Link>
       </Wrapper>
     );
   }
