@@ -286,9 +286,9 @@ input:focus {
 .loading {
   width: 6rem;
   height: 6rem;
-  border: 5px solid var(--grey-400);
+  border: 5px solid var(--golden);
   border-radius: 50%;
-  border-top-color: var(--primary-500);
+  border-top-color: var(--dark-green);
   animation: spinner 2s linear infinite;
 }
 .loading-center {
