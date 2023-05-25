@@ -12,6 +12,6 @@ import testUser from "../middleware/testUser.js";
 
 router.route("/").post(testUser, createJob).get(getAllJobs);
 router.route("/stats").get(showStats);
-router.route("/:id").delete(testUser, deleteJob).patch(updateJobs);
+router.route("/:id").delete(testUser, deleteJob).patch(testUser, updateJobs);
 
 export default router;
